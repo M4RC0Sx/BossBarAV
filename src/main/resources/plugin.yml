@@ -1,0 +1,6 @@
+name: BossBarAV
+version: 1.0
+description: This is the test plugin for BossBar AV.
+main: me.oliwer.bossbarav.TestPlugin
+author: Oliwer
+website: www.savagelabs.net

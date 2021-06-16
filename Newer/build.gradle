@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+}
+
+group 'me.oliwer'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven { url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
+}
+
+dependencies {
+    compileOnly(files("../libs/NMS-AV.jar"))
+    compileOnly(project(":API"))
+    compileOnly 'org.spigotmc:spigot-api:1.16.4-R0.1-SNAPSHOT'
+}

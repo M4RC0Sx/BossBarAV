@@ -1,0 +1,6 @@
+rootProject.name = 'BossBarAV'
+include 'API'
+include '1_8_R1'
+include '1_8_R2'
+include '1_8_R3'
+include 'Newer'
