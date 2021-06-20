@@ -2,17 +2,13 @@ package me.oliwer.bossbarav.impl;
 
 import me.oliwer.bossbar.api.BarEntity;
 import me.oliwer.bossbar.api.BarUpdate;
-import net.minecraft.server.v1_8_R3.*;
 import org.bukkit.Bukkit;
-import org.bukkit.Location;
+import org.bukkit.World;
 import org.bukkit.boss.BarColor;
 import org.bukkit.boss.BarStyle;
 import org.bukkit.boss.BossBar;
-import org.bukkit.craftbukkit.v1_8_R3.CraftWorld;
-import org.bukkit.craftbukkit.v1_8_R3.entity.CraftPlayer;
 import org.bukkit.entity.Player;
 
-import java.lang.reflect.Field;
 import java.util.function.Consumer;
 
 public final class BossBarNewer extends BarEntity<BossBar, Object> {
@@ -60,16 +56,14 @@ public final class BossBarNewer extends BarEntity<BossBar, Object> {
     }
 
     @Override
-    protected DataWatcher createWatcher() {
+    protected Object createWatcher() {
         return null;
     }
 
     @Override
-    public void tick() {
+    public void tick() {}
 
-    }
-
-    public static BarEntity<?, ?> create(Location location, float healthPercentage, String text) {
+    public static BarEntity<?, ?> create(World world, float healthPercentage, String text) {
         return new BossBarNewer(healthPercentage, text);
     }
 }
