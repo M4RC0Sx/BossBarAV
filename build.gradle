@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'me.oliwer'
-version '1.0-SNAPSHOT'
+version '1.1'
 
 repositories {
     mavenCentral()
@@ -19,3 +19,4 @@ dependencies {
     implementation project('Newer')
     compileOnly 'org.spigotmc:spigot-api:1.16.4-R0.1-SNAPSHOT'
 }
+
